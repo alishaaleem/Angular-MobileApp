@@ -1,0 +1,8 @@
+[
+  {"id":1,"account_number":"IRA - 5200","available_cash":5763.36,"todays_change":8916.69,"percent_change":-0.08},
+  {"id":2,"account_number":"AAA - 1812","available_cash":2010926.10,"todays_change":38881.63,"percent_change":0.21},
+  {"id":3,"account_number":"AAA - 3810","available_cash":10050054.07,"todays_change":8916.69,"percent_change":0.07},
+  {"id":4,"account_number":"AAA - 0029","available_cash":39160334.42,"todays_change":31435.87,"percent_change":-0.07},
+  {"id":5,"account_number":"IRA - 0146","available_cash":15884302.39,"todays_change":7430.83,"percent_change":0.03},
+  {"id":6,"account_number":"REG - 2019","available_cash":13465679.34,"todays_change":0,"percent_change":0}
+]

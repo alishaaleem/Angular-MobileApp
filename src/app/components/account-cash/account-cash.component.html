@@ -1,0 +1,31 @@
+<div class="container">
+
+	<table cellspacing="0" width="100%" height="70%">
+		<tr class="tblHead">
+			<th class="accountHeader" align="left" valign="bottom" width="50%" (click)="sortByAccount($event)">
+				Account
+				<div class="caret"></div>
+      </th>
+			<th class="accountCash" align="right" width="50%" (click)="sortByCash($event)">
+        <div class="caret"></div>
+				<span class="availableCash">Available Cash</span>
+				<div class="todaysChange">Today's change</div>
+			</th>
+		</tr>
+		<tr *ngFor="let element of accountList | slice:0:limit" class="tblRow">
+			<td class="accountNo" align="left">{{element.account_number}}</td>
+			<td align="right">
+				<div class="availableCash">{{element.available_cash | currency: 'USD' }}</div>
+				<div class="valueHolder" [ngClass]="{'green':element.percent_change > 0,'red':element.percent_change < 0, 'gray':element.percent_change == 0}">
+          <span class="percentage">{{(element.percent_change > 0)?'+':''}}{{element.percent_change}}%</span>
+          /
+          <span class="todaysChange">{{element.todays_change | currency: 'USD' }}</span>
+        </div>
+			</td>
+		</tr>
+
+	</table>
+
+  <button id="loadMore" *ngIf="!showAll && accountList && accountList.length>limit" (click)="loadMore()">Load more</button>
+
+</div>

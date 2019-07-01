@@ -1,0 +1,89 @@
+.container{
+  margin:10px; 
+  background-color: white;
+  
+}
+
+.tblRow td{
+  border-bottom: 1px solid lightgray;
+  padding:8px;
+  
+}
+.accountNo{
+  color: #2778B3;
+  font-weight:bolder;
+  font-size:14px;
+}
+.tblRow .availableCash{
+  font-size: 14px;
+}
+.tblRow .valueHolder{
+  font-size:11px;
+}
+
+.tblHead th{
+  border-bottom: 1px solid darkgray;
+  padding:5px;
+  font-weight: 100;
+}
+
+.tblHead th.sort{
+  background-color: rgb(238, 235, 235)
+}
+
+.tblHead th.sort.ascending .caret{
+  width: 0; 
+  height: 1px; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid steelblue;
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px
+}
+
+.tblHead th.sort.descending .caret{
+  width: 0; 
+  height: 1px; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid steelblue;
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px
+}
+
+.accountHeader{
+  font-size: 11px;
+  border-right: 2px solid whitesmoke;
+}
+
+.tblHead .availableCash{
+  font-size: 10.5px;
+  
+}
+.tblHead .todaysChange{
+  font-size: 11px;
+  color: grey
+}
+.green{
+  color:#41B765;
+}
+
+.red{
+  color: #FF0000;
+}
+
+.gray{
+  color: #5D5D5D;
+}
+button#loadMore{
+  width: 100%;
+  text-align: center;
+  border:none;
+  padding: 18px;
+  font-size: 16px;
+  font-weight: 500;
+  color:#006EAE;
+  
+}
